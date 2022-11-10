@@ -1,0 +1,57 @@
+###
+GET http://localhost:3000
+
+### GET ALL PASSENGERS
+GET http://localhost:3000/passengers
+
+### GET ALL CRUISES
+GET http://localhost:3000/cruises
+
+### GET ALL PASSENGERS BY ID
+GET http://localhost:3000/passengers/2
+
+### GET CRUSIE BY ID 
+GET http://localhost:3000/cruises/2
+
+### DELETE PASSENGER BY ID 
+DELETE http://localhost:3000/passenger/4
+
+### NOT WORKING
+DELETE http://localhost:3000/cruise/1
+
+
+### 
+POST http://localhost:3000/passenger
+Content-Type: application/json
+
+{
+    "name":"jimmy",
+    "age":19,
+    "cruise_id":2
+}
+
+###
+POST http://localhost:3000/cruise
+Content-Type: application/json
+
+{
+    "name":"The Ship"
+}
+
+###
+PATCH  http://localhost:3000/passenger/1
+Content-Type: application/json
+
+{
+    "name":"bob",
+    "age":50,
+    "cruise_id":3
+}
+
+### 
+PATCH http://localhost:3000/cruise/3
+Content-Type: application/json
+
+{
+    "name":"boat"
+}
